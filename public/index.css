@@ -1,0 +1,22 @@
+/*this is a css comment*/
+
+
+Body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: tan;
+}
+header {
+  border: 3px solid black;
+}
+
+#fNamerad1 {
+  min-width: 375px;
+  position: relative;
+}
+
+#fNamerad2 {
+  min-width: 375px;
+  position: relative;
+}

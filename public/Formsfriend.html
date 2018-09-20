@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+    <link rel="stylesheet"  type="text/css" href="./index.css">
+
+    
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+  </head>
+  <body>
+      <a href="http://localhost:3000/">MAIN PAGE</a>
+    <img src="https://www.catster.com/wp-content/uploads/2015/06/fat-cat-obese2.jpg">
+    <hr/>
+      <form id="searchbar" onsubmit="alert('Searched')">
+            <label for="Search">Search Cat Picture Library:</label>
+            <input id="Search" type="search">
+            <input type="submit" value="Search"> <br/>
+      </form>
+    <hr/>
+    <!-- Create a form for registering a new user with the following information: First Name, Last Name, Email, Phone, Age, Password, and Password Confirmation -->
+
+      <form id="newuser" onsubmit="alert">
+        <h2>Register new user:</h2>
+            <input id="email" type="email"placeholder="E-Mail Address" required><br/>
+            <input id="phone" type="tel" placeholder="Phone Number (123)-456-7890 format"pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br/>
+           <input id="fname" type="text" placeholder="First Name" pattern="[0-9]"><br/>
+           <!-- <input id="lname" type="text" placeholder="Last Name"><br/> -->
+            <label for="dob">Age:</label><br/>
+            <input id="dob" type="number" min="0"required><br/>
+
+        <h4>Spell your First Name</h4>
+                  <div id="fNamerad1">
+                    <Label>Character 1:</Label>
+                    <input type="radio" name="fNamerad1" required value="A">A
+                    <input type="radio" name="fNamerad1" required value="B">B
+                    <input type="radio" name="fNamerad1" required value="C">C
+                    <input type="radio" name="fNamerad1" required value="D">D
+                    <input type="radio" name="fNamerad1" required value="E">E
+                    <input type="radio" name="fNamerad1" required value="F">F
+                    <input type="radio" name="fNamerad1" required value="A">G
+                    <input type="radio" name="fNamerad1" required value="B">H
+                    <input type="radio" name="fNamerad1" required value="C">I
+                    <input type="radio" name="fNamerad1" required value="D">J
+                    <input type="radio" name="fNamerad1" required value="E">K
+                    <input type="radio" name="fNamerad1" required value="F">L
+                    <input type="radio" name="fNamerad1" required value="F">M
+                    <input type="radio" name="fNamerad1" required value="F">N
+                    <input type="radio" name="fNamerad1" required value="F">O
+                    <input type="radio" name="fNamerad1" required value="F">P
+                    <input type="radio" name="fNamerad1" required value="F">Q
+                    <input type="radio" name="fNamerad1" required value="F">R
+                    <input type="radio" name="fNamerad1" required value="F">S
+                    <input type="radio" name="fNamerad1" required value="F">T
+                    <input type="radio" name="fNamerad1" required value="F">U
+                    <input type="radio" name="fNamerad1" required value="F">V
+                    <input type="radio" name="fNamerad1" required value="F">W
+                    <input type="radio" name="fNamerad1" required value="F">X
+                    <input type="radio" name="fNamerad1" required value="F">Y
+                    <input type="radio" name="fNamerad1" required value="F">Z
+                    <input type="radio" name="fNamerad1" required value="F">BLANK
+                    <input type="radio" name="fNamerad1" required value="F">-
+                  </div><br/> 
+                  <div id="lNamerad2">
+                      <Label>Character 2:</Label>
+                      <input type="radio" name="fNamerad2" required value="A">A
+                      <input type="radio" name="fNamerad2" required value="B">B
+                      <input type="radio" name="fNamerad2" required value="C">C
+                      <input type="radio" name="fNamerad2" required value="D">D
+                      <input type="radio" name="fNamerad2" required value="E">E
+                      <input type="radio" name="fNamerad2" required value="F">F
+                      <input type="radio" name="fNamerad2" required value="A">G
+                      <input type="radio" name="fNamerad2" required value="B">H
+                      <input type="radio" name="fNamerad2" required value="C">I
+                      <input type="radio" name="fNamerad2" required value="D">J
+                      <input type="radio" name="fNamerad2" required value="E">K
+                      <input type="radio" name="fNamerad2" required value="F">L
+                      <input type="radio" name="fNamerad2" required value="F">M
+                      <input type="radio" name="fNamerad2" required value="F">N
+                      <input type="radio" name="fNamerad2" required value="F">O
+                      <input type="radio" name="fNamerad2" required value="F">P
+                      <input type="radio" name="fNamerad2" required value="F">Q
+                      <input type="radio" name="fNamerad2" required value="F">R
+                      <input type="radio" name="fNamerad2" required value="F">S
+                      <input type="radio" name="fNamerad2" required value="F">T
+                      <input type="radio" name="fNamerad2" required value="F">U
+                      <input type="radio" name="fNamerad2" required value="F">V
+                      <input type="radio" name="fNamerad2" required value="F">W
+                      <input type="radio" name="fNamerad2" required value="F">X
+                      <input type="radio" name="fNamerad2" required value="F">Y
+                      <input type="radio" name="fNamerad2" required value="F">Z
+                      <input type="radio" name="fNamerad2" required value="F">BLANK
+                      <input type="radio" name="fNamerad2" required value="F">-
+                    </div><br/> 
+                    <div id="fNamerad3">
+                        <Label>Character 3:</Label>
+                        <input type="radio" name="fNamerad3" required value="A">A
+                        <input type="radio" name="fNamerad3" required value="B">B
+                        <input type="radio" name="fNamerad3" required value="C">C
+                        <input type="radio" name="fNamerad3" required value="D">D
+                        <input type="radio" name="fNamerad3" required value="E">E
+                        <input type="radio" name="fNamerad3" required value="F">F
+                        <input type="radio" name="fNamerad3" required value="A">G
+                        <input type="radio" name="fNamerad3" required value="B">H
+                        <input type="radio" name="fNamerad3" required value="C">I
+                        <input type="radio" name="fNamerad3" required value="D">J
+                        <input type="radio" name="fNamerad3" required value="E">K
+                        <input type="radio" name="fNamerad3" required value="F">L
+                        <input type="radio" name="fNamerad3" required value="F">M
+                        <input type="radio" name="fNamerad3" required value="F">N
+                        <input type="radio" name="fNamerad3" required value="F">O
+                        <input type="radio" name="fNamerad3" required value="F">P
+                        <input type="radio" name="fNamerad3" required value="F">Q
+                        <input type="radio" name="fNamerad3" required value="F">R
+                        <input type="radio" name="fNamerad3" required value="F">S
+                        <input type="radio" name="fNamerad3" required value="F">T
+                        <input type="radio" name="fNamerad3" required value="F">U
+                        <input type="radio" name="fNamerad3" required value="F">V
+                        <input type="radio" name="fNamerad3" required value="F">W
+                        <input type="radio" name="fNamerad3" required value="F">X
+                        <input type="radio" name="fNamerad3" required value="F">Y
+                        <input type="radio" name="fNamerad3" required value="F">Z
+                        <input type="radio" name="fNamerad3" required value="F">BLANK
+                        <input type="radio" name="fNamerad3" required value="F">-
+                      </div><br/> 
+                      <div id="lNamerad4">
+                          <Label>Character 4:</Label>
+                          <input type="radio" name="lNamerad4" required value="A">A
+                          <input type="radio" name="lNamerad4" required value="B">B
+                          <input type="radio" name="lNamerad4" required value="C">C
+                          <input type="radio" name="lNamerad4" required value="D">D
+                          <input type="radio" name="lNamerad4" required value="E">E
+                          <input type="radio" name="lNamerad4" required value="F">F
+                          <input type="radio" name="lNamerad4" required value="A">G
+                          <input type="radio" name="lNamerad4" required value="B">H
+                          <input type="radio" name="lNamerad4" required value="C">I
+                          <input type="radio" name="lNamerad4" required value="D">J
+                          <input type="radio" name="lNamerad4" required value="E">K
+                          <input type="radio" name="lNamerad4" required value="F">L
+                          <input type="radio" name="lNamerad4" required value="F">M
+                          <input type="radio" name="lNamerad4" required value="F">N
+                          <input type="radio" name="lNamerad4" required value="F">O
+                          <input type="radio" name="lNamerad4" required value="F">P
+                          <input type="radio" name="lNamerad4" required value="F">Q
+                          <input type="radio" name="lNamerad4" required value="F">R
+                          <input type="radio" name="lNamerad4" required value="F">S
+                          <input type="radio" name="lNamerad4" required value="F">T
+                          <input type="radio" name="lNamerad4" required value="F">U
+                          <input type="radio" name="lNamerad4" required value="F">V
+                          <input type="radio" name="lNamerad4" required value="F">W
+                          <input type="radio" name="lNamerad4" required value="F">X
+                          <input type="radio" name="lNamerad4" required value="F">Y
+                          <input type="radio" name="lNamerad4" required value="F">Z
+                          <input type="radio" name="lNamerad4" required value="F">BLANK
+                          <input type="radio" name="lNamerad4" required value="F">-
+                        </div><br/> 
+                        <div id="fNamerad5">
+                            <Label>Character 5:</Label>
+                            <input type="radio" name="fNamerad5" required value="A">A
+                            <input type="radio" name="fNamerad5" required value="B">B
+                            <input type="radio" name="fNamerad5" required value="C">C
+                            <input type="radio" name="fNamerad5" required value="D">D
+                            <input type="radio" name="fNamerad5" required value="E">E
+                            <input type="radio" name="fNamerad5" required value="F">F
+                            <input type="radio" name="fNamerad5" required value="A">G
+                            <input type="radio" name="fNamerad5" required value="B">H
+                            <input type="radio" name="fNamerad5" required value="C">I
+                            <input type="radio" name="fNamerad5" required value="D">J
+                            <input type="radio" name="fNamerad5" required value="E">K
+                            <input type="radio" name="fNamerad5" required value="F">L
+                            <input type="radio" name="fNamerad5" required value="F">M
+                            <input type="radio" name="fNamerad5" required value="F">N
+                            <input type="radio" name="fNamerad5" required value="F">O
+                            <input type="radio" name="fNamerad5" required value="F">P
+                            <input type="radio" name="fNamerad5" required value="F">Q
+                            <input type="radio" name="fNamerad5" required value="F">R
+                            <input type="radio" name="fNamerad5" required value="F">S
+                            <input type="radio" name="fNamerad5" required value="F">T
+                            <input type="radio" name="fNamerad5" required value="F">U
+                            <input type="radio" name="fNamerad5" required value="F">V
+                            <input type="radio" name="fNamerad5" required value="F">W
+                            <input type="radio" name="fNamerad5" required value="F">X
+                            <input type="radio" name="fNamerad5" required value="F">Y
+                            <input type="radio" name="fNamerad5" required value="F">Z
+                            <input type="radio" name="fNamerad5" required value="F">BLANK
+                            <input type="radio" name="fNamerad5" required value="F">-
+                          </div><br/> 
+                          <div id="fNamerad6">
+                              <Label>Character 6:</Label>
+                              <input type="radio" name="fNamerad6" required value="A">A
+                              <input type="radio" name="fNamerad6" required value="B">B
+                              <input type="radio" name="fNamerad6" required value="C">C
+                              <input type="radio" name="fNamerad6" required value="D">D
+                              <input type="radio" name="fNamerad6" required value="E">E
+                              <input type="radio" name="fNamerad6" required value="F">F
+                              <input type="radio" name="fNamerad6" required value="A">G
+                              <input type="radio" name="fNamerad6" required value="B">H
+                              <input type="radio" name="fNamerad6" required value="C">I
+                              <input type="radio" name="fNamerad6" required value="D">J
+                              <input type="radio" name="fNamerad6" required value="E">K
+                              <input type="radio" name="fNamerad6" required value="F">L
+                              <input type="radio" name="fNamerad6" required value="F">M
+                              <input type="radio" name="fNamerad6" required value="F">N
+                              <input type="radio" name="fNamerad6" required value="F">O
+                              <input type="radio" name="fNamerad6" required value="F">P
+                              <input type="radio" name="fNamerad6" required value="F">Q
+                              <input type="radio" name="fNamerad6" required value="F">R
+                              <input type="radio" name="fNamerad6" required value="F">S
+                              <input type="radio" name="fNamerad6" required value="F">T
+                              <input type="radio" name="fNamerad6" required value="F">U
+                              <input type="radio" name="fNamerad6" required value="F">V
+                              <input type="radio" name="fNamerad6" required value="F">W
+                              <input type="radio" name="fNamerad6" required value="F">X
+                              <input type="radio" name="fNamerad6" required value="F">Y
+                              <input type="radio" name="fNamerad6" required value="F">Z
+                              <input type="radio" name="fNamerad6" required value="F">BLANK
+                              <input type="radio" name="fNamerad6" required value="F">-
+                            </div><br/> 
+                            <div id="lNamerad7">
+                                <Label>Character 7:</Label>
+                                <input type="radio" name="lNamerad7" required value="A">A
+                                <input type="radio" name="lNamerad7" required value="B">B
+                                <input type="radio" name="lNamerad7" required value="C">C
+                                <input type="radio" name="lNamerad7" required value="D">D
+                                <input type="radio" name="lNamerad7" required value="E">E
+                                <input type="radio" name="lNamerad7" required value="F">F
+                                <input type="radio" name="lNamerad7" required value="A">G
+                                <input type="radio" name="lNamerad7" required value="B">H
+                                <input type="radio" name="lNamerad7" required value="C">I
+                                <input type="radio" name="lNamerad7" required value="D">J
+                                <input type="radio" name="lNamerad7" required value="E">K
+                                <input type="radio" name="lNamerad7" required value="F">L
+                                <input type="radio" name="lNamerad7" required value="F">M
+                                <input type="radio" name="lNamerad7" required value="F">N
+                                <input type="radio" name="lNamerad7" required value="F">O
+                                <input type="radio" name="lNamerad7" required value="F">P
+                                <input type="radio" name="lNamerad7" required value="F">Q
+                                <input type="radio" name="lNamerad7" required value="F">R
+                                <input type="radio" name="lNamerad7" required value="F">S
+                                <input type="radio" name="lNamerad7" required value="F">T
+                                <input type="radio" name="lNamerad7" required value="F">U
+                                <input type="radio" name="lNamerad7" required value="F">V
+                                <input type="radio" name="lNamerad7" required value="F">W
+                                <input type="radio" name="lNamerad7" required value="F">X
+                                <input type="radio" name="lNamerad7" required value="F">Y
+                                <input type="radio" name="lNamerad7" required value="F">Z
+                                <input type="radio" name="lNamerad7" required value="F">BLANK
+                                <input type="radio" name="lNamerad7" required value="F">-
+                              </div><br/> 
+                              <div id="fNamerad8">
+                                  <Label>Character 8:</Label>
+                                  <input type="radio" name="fNamerad8" required value="A">A
+                                  <input type="radio" name="fNamerad8" required value="B">B
+                                  <input type="radio" name="fNamerad8" required value="C">C
+                                  <input type="radio" name="fNamerad8" required value="D">D
+                                  <input type="radio" name="fNamerad8" required value="E">E
+                                  <input type="radio" name="fNamerad8" required value="F">F
+                                  <input type="radio" name="fNamerad8" required value="A">G
+                                  <input type="radio" name="fNamerad8" required value="B">H
+                                  <input type="radio" name="fNamerad8" required value="C">I
+                                  <input type="radio" name="fNamerad8" required value="D">J
+                                  <input type="radio" name="fNamerad8" required value="E">K
+                                  <input type="radio" name="fNamerad8" required value="F">L
+                                  <input type="radio" name="fNamerad8" required value="F">M
+                                  <input type="radio" name="fNamerad8" required value="F">N
+                                  <input type="radio" name="fNamerad8" required value="F">O
+                                  <input type="radio" name="fNamerad8" required value="F">P
+                                  <input type="radio" name="fNamerad8" required value="F">Q
+                                  <input type="radio" name="fNamerad8" required value="F">R
+                                  <input type="radio" name="fNamerad8" required value="F">S
+                                  <input type="radio" name="fNamerad8" required value="F">T
+                                  <input type="radio" name="fNamerad8" required value="F">U
+                                  <input type="radio" name="fNamerad8" required value="F">V
+                                  <input type="radio" name="fNamerad8" required value="F">W
+                                  <input type="radio" name="fNamerad8" required value="F">X
+                                  <input type="radio" name="fNamerad8" required value="F">Y
+                                  <input type="radio" name="fNamerad8" required value="F">Z
+                                  <input type="radio" name="fNamerad8" required value="F">BLANK
+                                  <input type="radio" name="fNamerad8" required value="F">-
+                                </div><br/> 
+                                <div id="fNamerad9">
+                                    <Label>Character 9:</Label>
+                                    <input type="radio" name="fNamerad9" required value="A">A
+                                    <input type="radio" name="fNamerad9" required value="B">B
+                                    <input type="radio" name="fNamerad9" required value="C">C
+                                    <input type="radio" name="fNamerad9" required value="D">D
+                                    <input type="radio" name="fNamerad9" required value="E">E
+                                    <input type="radio" name="fNamerad9" required value="F">F
+                                    <input type="radio" name="fNamerad9" required value="A">G
+                                    <input type="radio" name="fNamerad9" required value="B">H
+                                    <input type="radio" name="fNamerad9" required value="C">I
+                                    <input type="radio" name="fNamerad9" required value="D">J
+                                    <input type="radio" name="fNamerad9" required value="E">K
+                                    <input type="radio" name="fNamerad9" required value="F">L
+                                    <input type="radio" name="fNamerad9" required value="F">M
+                                    <input type="radio" name="fNamerad9" required value="F">N
+                                    <input type="radio" name="fNamerad9" required value="F">O
+                                    <input type="radio" name="fNamerad9" required value="F">P
+                                    <input type="radio" name="fNamerad9" required value="F">Q
+                                    <input type="radio" name="fNamerad9" required value="F">R
+                                    <input type="radio" name="fNamerad9" required value="F">S
+                                    <input type="radio" name="fNamerad9" required value="F">T
+                                    <input type="radio" name="fNamerad9" required value="F">U
+                                    <input type="radio" name="fNamerad9" required value="F">V
+                                    <input type="radio" name="fNamerad9" required value="F">W
+                                    <input type="radio" name="fNamerad9" required value="F">X
+                                    <input type="radio" name="fNamerad9" required value="F">Y
+                                    <input type="radio" name="fNamerad9" required value="F">Z
+                                    <input type="radio" name="fNamerad9" required value="F">BLANK
+                                    <input type="radio" name="fNamerad9" required value="F">-
+                                  </div><br/> 
+                                  <div id="fNamerad10">
+                                      <Label>Character 10:</Label>
+                                      <input type="radio" name="fNamerad10" required value="A">A
+                                      <input type="radio" name="fNamerad10" required value="B">B
+                                      <input type="radio" name="fNamerad10" required value="C">C
+                                      <input type="radio" name="fNamerad10" required value="D">D
+                                      <input type="radio" name="fNamerad10" required value="E">E
+                                      <input type="radio" name="fNamerad10" required value="F">F
+                                      <input type="radio" name="fNamerad10" required value="A">G
+                                      <input type="radio" name="fNamerad10" required value="B">H
+                                      <input type="radio" name="fNamerad10" required value="C">I
+                                      <input type="radio" name="fNamerad10" required value="D">J
+                                      <input type="radio" name="fNamerad10" required value="E">K
+                                      <input type="radio" name="fNamerad10" required value="F">L
+                                      <input type="radio" name="fNamerad10" required value="F">M
+                                      <input type="radio" name="fNamerad10" required value="F">N
+                                      <input type="radio" name="fNamerad10" required value="F">O
+                                      <input type="radio" name="fNamerad10" required value="F">P
+                                      <input type="radio" name="fNamerad10" required value="F">Q
+                                      <input type="radio" name="fNamerad10" required value="F">R
+                                      <input type="radio" name="fNamerad10" required value="F">S
+                                      <input type="radio" name="fNamerad10" required value="F">T
+                                      <input type="radio" name="fNamerad10" required value="F">U
+                                      <input type="radio" name="fNamerad10" required value="F">V
+                                      <input type="radio" name="fNamerad10" required value="F">W
+                                      <input type="radio" name="fNamerad10" required value="F">X
+                                      <input type="radio" name="fNamerad10" required value="F">Y
+                                      <input type="radio" name="fNamerad10" required value="F">Z
+                                      <input type="radio" name="fNamerad10" required value="F">BLANK
+                                      <input type="radio" name="fNamerad10" required value="F">-
+                                    </div><br/> 
+                                    <div id="lNamerad11">
+                                        <Label>Character 11:</Label>
+                                        <input type="radio" name="fNamerad11" required value="A">A
+                                        <input type="radio" name="fNamerad11" required value="B">B
+                                        <input type="radio" name="fNamerad11" required value="C">C
+                                        <input type="radio" name="fNamerad11" required value="D">D
+                                        <input type="radio" name="fNamerad11" required value="E">E
+                                        <input type="radio" name="fNamerad11" required value="F">F
+                                        <input type="radio" name="fNamerad11" required value="A">G
+                                        <input type="radio" name="fNamerad11" required value="B">H
+                                        <input type="radio" name="fNamerad11" required value="C">I
+                                        <input type="radio" name="fNamerad11" required value="D">J
+                                        <input type="radio" name="fNamerad11" required value="E">K
+                                        <input type="radio" name="fNamerad11" required value="F">L
+                                        <input type="radio" name="fNamerad11" required value="F">M
+                                        <input type="radio" name="fNamerad11" required value="F">N
+                                        <input type="radio" name="fNamerad11" required value="F">O
+                                        <input type="radio" name="fNamerad11" required value="F">P
+                                        <input type="radio" name="fNamerad11" required value="F">Q
+                                        <input type="radio" name="fNamerad11" required value="F">R
+                                        <input type="radio" name="fNamerad11" required value="F">S
+                                        <input type="radio" name="fNamerad11" required value="F">T
+                                        <input type="radio" name="fNamerad11" required value="F">U
+                                        <input type="radio" name="fNamerad11" required value="F">V
+                                        <input type="radio" name="fNamerad11" required value="F">W
+                                        <input type="radio" name="fNamerad11" required value="F">X
+                                        <input type="radio" name="fNamerad11" required value="F">Y
+                                        <input type="radio" name="fNamerad11" required value="F">Z
+                                        <input type="radio" name="fNamerad11" required value="F">BLANK
+                                        <input type="radio" name="fNamerad11" required value="F">-
+                                      </div><br/> 
+                                      <div id="fNamerad12">
+                                          <Label>Character 12:</Label>
+                                          <input type="radio" name="fNamerad12" required value="A">A
+                                          <input type="radio" name="fNamerad12" required value="B">B
+                                          <input type="radio" name="fNamerad12" required value="C">C
+                                          <input type="radio" name="fNamerad12" required value="D">D
+                                          <input type="radio" name="fNamerad12" required value="E">E
+                                          <input type="radio" name="fNamerad12" required value="F">F
+                                          <input type="radio" name="fNamerad12" required value="A">G
+                                          <input type="radio" name="fNamerad12" required value="B">H
+                                          <input type="radio" name="fNamerad12" required value="C">I
+                                          <input type="radio" name="fNamerad12" required value="D">J
+                                          <input type="radio" name="fNamerad12" required value="E">K
+                                          <input type="radio" name="fNamerad12" required value="F">L
+                                          <input type="radio" name="fNamerad12" required value="F">M
+                                          <input type="radio" name="fNamerad12" required value="F">N
+                                          <input type="radio" name="fNamerad12" required value="F">O
+                                          <input type="radio" name="fNamerad12" required value="F">P
+                                          <input type="radio" name="fNamerad12" required value="F">Q
+                                          <input type="radio" name="fNamerad12" required value="F">R
+                                          <input type="radio" name="fNamerad12" required value="F">S
+                                          <input type="radio" name="fNamerad12" required value="F">T
+                                          <input type="radio" name="fNamerad12" required value="F">U
+                                          <input type="radio" name="fNamerad12" required value="F">V
+                                          <input type="radio" name="fNamerad12" required value="F">W
+                                          <input type="radio" name="fNamerad12" required value="F">X
+                                          <input type="radio" name="fNamerad12" required value="F">Y
+                                          <input type="radio" name="fNamerad12" required value="F">Z
+                                          <input type="radio" name="fNamerad12" required value="F">BLANK
+                                          <input type="radio" name="fNamerad12" required value="F">-
+                                        </div><br/>
+                                        
+                                        
+
+
+
+                                        <h4>Spell your Last Name</h4>
+                                        <div id="lNamerad1">
+                                          <Label>Character 1:</Label>
+                                          <input type="radio" name="lNamerad1" required value="A">A
+                                          <input type="radio" name="lNamerad1" required value="B">B
+                                          <input type="radio" name="lNamerad1" required value="C">C
+                                          <input type="radio" name="lNamerad1" required value="D">D
+                                          <input type="radio" name="lNamerad1" required value="E">E
+                                          <input type="radio" name="lNamerad1" required value="F">F
+                                          <input type="radio" name="lNamerad1" required value="A">G
+                                          <input type="radio" name="lNamerad1" required value="B">H
+                                          <input type="radio" name="lNamerad1" required value="C">I
+                                          <input type="radio" name="lNamerad1" required value="D">J
+                                          <input type="radio" name="lNamerad1" required value="E">K
+                                          <input type="radio" name="lNamerad1" required value="F">L
+                                          <input type="radio" name="lNamerad1" required value="F">M
+                                          <input type="radio" name="lNamerad1" required value="F">N
+                                          <input type="radio" name="lNamerad1" required value="F">O
+                                          <input type="radio" name="lNamerad1" required value="F">P
+                                          <input type="radio" name="lNamerad1" required value="F">Q
+                                          <input type="radio" name="lNamerad1" required value="F">R
+                                          <input type="radio" name="lNamerad1" required value="F">S
+                                          <input type="radio" name="lNamerad1" required value="F">T
+                                          <input type="radio" name="lNamerad1" required value="F">U
+                                          <input type="radio" name="lNamerad1" required value="F">V
+                                          <input type="radio" name="lNamerad1" required value="F">W
+                                          <input type="radio" name="lNamerad1" required value="F">X
+                                          <input type="radio" name="lNamerad1" required value="F">Y
+                                          <input type="radio" name="lNamerad1" required value="F">Z
+                                          <input type="radio" name="lNamerad1" required value="F">BLANK
+                                          <input type="radio" name="lNamerad1" required value="F">-
+                                        </div><br/> 
+                                        <div id="lNamerad2">
+                                            <Label>Character 2:</Label>
+                                            <input type="radio" name="lNamerad2" required value="A">A
+                                            <input type="radio" name="lNamerad2" required value="B">B
+                                            <input type="radio" name="lNamerad2" required value="C">C
+                                            <input type="radio" name="lNamerad2" required value="D">D
+                                            <input type="radio" name="lNamerad2" required value="E">E
+                                            <input type="radio" name="lNamerad2" required value="F">F
+                                            <input type="radio" name="lNamerad2" required value="A">G
+                                            <input type="radio" name="lNamerad2" required value="B">H
+                                            <input type="radio" name="lNamerad2" required value="C">I
+                                            <input type="radio" name="lNamerad2" required value="D">J
+                                            <input type="radio" name="lNamerad2" required value="E">K
+                                            <input type="radio" name="lNamerad2" required value="F">L
+                                            <input type="radio" name="lNamerad2" required value="F">M
+                                            <input type="radio" name="lNamerad2" required value="F">N
+                                            <input type="radio" name="lNamerad2" required value="F">O
+                                            <input type="radio" name="lNamerad2" required value="F">P
+                                            <input type="radio" name="lNamerad2" required value="F">Q
+                                            <input type="radio" name="lNamerad2" required value="F">R
+                                            <input type="radio" name="lNamerad2" required value="F">S
+                                            <input type="radio" name="lNamerad2" required value="F">T
+                                            <input type="radio" name="lNamerad2" required value="F">U
+                                            <input type="radio" name="lNamerad2" required value="F">V
+                                            <input type="radio" name="lNamerad2" required value="F">W
+                                            <input type="radio" name="lNamerad2" required value="F">X
+                                            <input type="radio" name="lNamerad2" required value="F">Y
+                                            <input type="radio" name="lNamerad2" required value="F">Z
+                                            <input type="radio" name="lNamerad2" required value="F">BLANK
+                                            <input type="radio" name="lNamerad2" required value="F">-
+                                          </div><br/> 
+                                          <div id="lNamerad3">
+                                              <Label>Character 3:</Label>
+                                              <input type="radio" name="lNamerad3" required value="A">A
+                                              <input type="radio" name="lNamerad3" required value="B">B
+                                              <input type="radio" name="lNamerad3" required value="C">C
+                                              <input type="radio" name="lNamerad3" required value="D">D
+                                              <input type="radio" name="lNamerad3" required value="E">E
+                                              <input type="radio" name="lNamerad3" required value="F">F
+                                              <input type="radio" name="lNamerad3" required value="A">G
+                                              <input type="radio" name="lNamerad3" required value="B">H
+                                              <input type="radio" name="lNamerad3" required value="C">I
+                                              <input type="radio" name="lNamerad3" required value="D">J
+                                              <input type="radio" name="lNamerad3" required value="E">K
+                                              <input type="radio" name="lNamerad3" required value="F">L
+                                              <input type="radio" name="lNamerad3" required value="F">M
+                                              <input type="radio" name="lNamerad3" required value="F">N
+                                              <input type="radio" name="lNamerad3" required value="F">O
+                                              <input type="radio" name="lNamerad3" required value="F">P
+                                              <input type="radio" name="lNamerad3" required value="F">Q
+                                              <input type="radio" name="lNamerad3" required value="F">R
+                                              <input type="radio" name="lNamerad3" required value="F">S
+                                              <input type="radio" name="lNamerad3" required value="F">T
+                                              <input type="radio" name="lNamerad3" required value="F">U
+                                              <input type="radio" name="lNamerad3" required value="F">V
+                                              <input type="radio" name="lNamerad3" required value="F">W
+                                              <input type="radio" name="lNamerad3" required value="F">X
+                                              <input type="radio" name="lNamerad3" required value="F">Y
+                                              <input type="radio" name="lNamerad3" required value="F">Z
+                                              <input type="radio" name="lNamerad3" required value="F">BLANK
+                                              <input type="radio" name="lNamerad3" required value="F">-
+                                            </div><br/> 
+                                            <div id="fNamerad4">
+                                                <Label>Character 4:</Label>
+                                                <input type="radio" name="fNamerad4" required value="A">A
+                                                <input type="radio" name="fNamerad4" required value="B">B
+                                                <input type="radio" name="fNamerad4" required value="C">C
+                                                <input type="radio" name="fNamerad4" required value="D">D
+                                                <input type="radio" name="fNamerad4" required value="E">E
+                                                <input type="radio" name="fNamerad4" required value="F">F
+                                                <input type="radio" name="fNamerad4" required value="A">G
+                                                <input type="radio" name="fNamerad4" required value="B">H
+                                                <input type="radio" name="fNamerad4" required value="C">I
+                                                <input type="radio" name="fNamerad4" required value="D">J
+                                                <input type="radio" name="fNamerad4" required value="E">K
+                                                <input type="radio" name="fNamerad4" required value="F">L
+                                                <input type="radio" name="fNamerad4" required value="F">M
+                                                <input type="radio" name="fNamerad4" required value="F">N
+                                                <input type="radio" name="fNamerad4" required value="F">O
+                                                <input type="radio" name="fNamerad4" required value="F">P
+                                                <input type="radio" name="fNamerad4" required value="F">Q
+                                                <input type="radio" name="fNamerad4" required value="F">R
+                                                <input type="radio" name="fNamerad4" required value="F">S
+                                                <input type="radio" name="fNamerad4" required value="F">T
+                                                <input type="radio" name="fNamerad4" required value="F">U
+                                                <input type="radio" name="fNamerad4" required value="F">V
+                                                <input type="radio" name="fNamerad4" required value="F">W
+                                                <input type="radio" name="fNamerad4" required value="F">X
+                                                <input type="radio" name="fNamerad4" required value="F">Y
+                                                <input type="radio" name="fNamerad4" required value="F">Z
+                                                <input type="radio" name="fNamerad4" required value="F">BLANK
+                                                <input type="radio" name="fNamerad4" required value="F">-
+                                              </div><br/> 
+                                              <div id="lNamerad5">
+                                                  <Label>Character 5:</Label>
+                                                  <input type="radio" name="lNamerad5" required value="A">A
+                                                  <input type="radio" name="lNamerad5" required value="B">B
+                                                  <input type="radio" name="lNamerad5" required value="C">C
+                                                  <input type="radio" name="fNamerad5" required value="D">D
+                                                  <input type="radio" name="lNamerad5" required value="E">E
+                                                  <input type="radio" name="lNamerad5" required value="F">F
+                                                  <input type="radio" name="lNamerad5" required value="A">G
+                                                  <input type="radio" name="lNamerad5" required value="B">H
+                                                  <input type="radio" name="lNamerad5" required value="C">I
+                                                  <input type="radio" name="lNamerad5" required value="D">J
+                                                  <input type="radio" name="lNamerad5" required value="E">K
+                                                  <input type="radio" name="lNamerad5" required value="F">L
+                                                  <input type="radio" name="lNamerad5" required value="F">M
+                                                  <input type="radio" name="lNamerad5" required value="F">N
+                                                  <input type="radio" name="lNamerad5" required value="F">O
+                                                  <input type="radio" name="lNamerad5" required value="F">P
+                                                  <input type="radio" name="lNamerad5" required value="F">Q
+                                                  <input type="radio" name="lNamerad5" required value="F">R
+                                                  <input type="radio" name="lNamerad5" required value="F">S
+                                                  <input type="radio" name="lNamerad5" required value="F">T
+                                                  <input type="radio" name="lNamerad5" required value="F">U
+                                                  <input type="radio" name="lNamerad5" required value="F">V
+                                                  <input type="radio" name="lNamerad5" required value="F">W
+                                                  <input type="radio" name="lNamerad5" required value="F">X
+                                                  <input type="radio" name="lNamerad5" required value="F">Y
+                                                  <input type="radio" name="lNamerad5" required value="F">Z
+                                                  <input type="radio" name="lNamerad5" required value="F">BLANK
+                                                  <input type="radio" name="lNamerad5" required value="F">-
+                                                </div><br/> 
+                                                <div id="lNamerad6">
+                                                    <Label>Character 6:</Label>
+                                                    <input type="radio" name="lNamerad6" required value="A">A
+                                                    <input type="radio" name="lNamerad6" required value="B">B
+                                                    <input type="radio" name="lNamerad6" required value="C">C
+                                                    <input type="radio" name="lNamerad6" required value="D">D
+                                                    <input type="radio" name="lNamerad6" required value="E">E
+                                                    <input type="radio" name="lNamerad6" required value="F">F
+                                                    <input type="radio" name="lNamerad6" required value="A">G
+                                                    <input type="radio" name="lNamerad6" required value="B">H
+                                                    <input type="radio" name="lNamerad6" required value="C">I
+                                                    <input type="radio" name="lNamerad6" required value="D">J
+                                                    <input type="radio" name="lNamerad6" required value="E">K
+                                                    <input type="radio" name="lNamerad6" required value="F">L
+                                                    <input type="radio" name="lNamerad6" required value="F">M
+                                                    <input type="radio" name="lNamerad6" required value="F">N
+                                                    <input type="radio" name="lNamerad6" required value="F">O
+                                                    <input type="radio" name="lNamerad6" required value="F">P
+                                                    <input type="radio" name="lNamerad6" required value="F">Q
+                                                    <input type="radio" name="lNamerad6" required value="F">R
+                                                    <input type="radio" name="lNamerad6" required value="F">S
+                                                    <input type="radio" name="lNamerad6" required value="F">T
+                                                    <input type="radio" name="lNamerad6" required value="F">U
+                                                    <input type="radio" name="lNamerad6" required value="F">V
+                                                    <input type="radio" name="lNamerad6" required value="F">W
+                                                    <input type="radio" name="lNamerad6" required value="F">X
+                                                    <input type="radio" name="lNamerad6" required value="F">Y
+                                                    <input type="radio" name="lNamerad6" required value="F">Z
+                                                    <input type="radio" name="lNamerad6" required value="F">BLANK
+                                                    <input type="radio" name="lNamerad6" required value="F">-
+                                                  </div><br/> 
+                                                  <div id="fNamerad7">
+                                                      <Label>Character 7:</Label>
+                                                      <input type="radio" name="fNamerad7" required value="A">A
+                                                      <input type="radio" name="fNamerad7" required value="B">B
+                                                      <input type="radio" name="fNamerad7" required value="C">C
+                                                      <input type="radio" name="fNamerad7" required value="D">D
+                                                      <input type="radio" name="fNamerad7" required value="E">E
+                                                      <input type="radio" name="fNamerad7" required value="F">F
+                                                      <input type="radio" name="fNamerad7" required value="A">G
+                                                      <input type="radio" name="fNamerad7" required value="B">H
+                                                      <input type="radio" name="fNamerad7" required value="C">I
+                                                      <input type="radio" name="fNamerad7" required value="D">J
+                                                      <input type="radio" name="fNamerad7" required value="E">K
+                                                      <input type="radio" name="fNamerad7" required value="F">L
+                                                      <input type="radio" name="fNamerad7" required value="F">M
+                                                      <input type="radio" name="fNamerad7" required value="F">N
+                                                      <input type="radio" name="fNamerad7" required value="F">O
+                                                      <input type="radio" name="fNamerad7" required value="F">P
+                                                      <input type="radio" name="fNamerad7" required value="F">Q
+                                                      <input type="radio" name="fNamerad7" required value="F">R
+                                                      <input type="radio" name="fNamerad7" required value="F">S
+                                                      <input type="radio" name="fNamerad7" required value="F">T
+                                                      <input type="radio" name="fNamerad7" required value="F">U
+                                                      <input type="radio" name="fNamerad7" required value="F">V
+                                                      <input type="radio" name="fNamerad7" required value="F">W
+                                                      <input type="radio" name="fNamerad7" required value="F">X
+                                                      <input type="radio" name="fNamerad7" required value="F">Y
+                                                      <input type="radio" name="fNamerad7" required value="F">Z
+                                                      <input type="radio" name="fNamerad7" required value="F">BLANK
+                                                      <input type="radio" name="fNamerad7" required value="F">-
+                                                    </div><br/> 
+                                                    <div id="lNamerad8">
+                                                        <Label>Character 8:</Label>
+                                                        <input type="radio" name="lNamerad8" required value="A">A
+                                                        <input type="radio" name="lNamerad8" required value="B">B
+                                                        <input type="radio" name="lNamerad8" required value="C">C
+                                                        <input type="radio" name="lNamerad8" required value="D">D
+                                                        <input type="radio" name="lNamerad8" required value="E">E
+                                                        <input type="radio" name="lNamerad8" required value="F">F
+                                                        <input type="radio" name="lNamerad8" required value="A">G
+                                                        <input type="radio" name="lNamerad8" required value="B">H
+                                                        <input type="radio" name="lNamerad8" required value="C">I
+                                                        <input type="radio" name="lNamerad8" required value="D">J
+                                                        <input type="radio" name="lNamerad8" required value="E">K
+                                                        <input type="radio" name="lNamerad8" required value="F">L
+                                                        <input type="radio" name="lNamerad8" required value="F">M
+                                                        <input type="radio" name="lNamerad8" required value="F">N
+                                                        <input type="radio" name="lNamerad8" required value="F">O
+                                                        <input type="radio" name="lNamerad8" required value="F">P
+                                                        <input type="radio" name="lNamerad8" required value="F">Q
+                                                        <input type="radio" name="lNamerad8" required value="F">R
+                                                        <input type="radio" name="lNamerad8" required value="F">S
+                                                        <input type="radio" name="lNamerad8" required value="F">T
+                                                        <input type="radio" name="lNamerad8" required value="F">U
+                                                        <input type="radio" name="lNamerad8" required value="F">V
+                                                        <input type="radio" name="lNamerad8" required value="F">W
+                                                        <input type="radio" name="lNamerad8" required value="F">X
+                                                        <input type="radio" name="lNamerad8" required value="F">Y
+                                                        <input type="radio" name="lNamerad8" required value="F">Z
+                                                        <input type="radio" name="lNamerad8" required value="F">BLANK
+                                                        <input type="radio" name="lNamerad8" required value="F">-
+                                                      </div><br/> 
+                                                      <div id="lNamerad9">
+                                                          <Label>Character 9:</Label>
+                                                          <input type="radio" name="lNamerad9" required value="A">A
+                                                          <input type="radio" name="lNamerad9" required value="B">B
+                                                          <input type="radio" name="lNamerad9" required value="C">C
+                                                          <input type="radio" name="lNamerad9" required value="D">D
+                                                          <input type="radio" name="lNamerad9" required value="E">E
+                                                          <input type="radio" name="lNamerad9" required value="F">F
+                                                          <input type="radio" name="lNamerad9" required value="A">G
+                                                          <input type="radio" name="lNamerad9" required value="B">H
+                                                          <input type="radio" name="lNamerad9" required value="C">I
+                                                          <input type="radio" name="lNamerad9" required value="D">J
+                                                          <input type="radio" name="lNamerad9" required value="E">K
+                                                          <input type="radio" name="lNamerad9" required value="F">L
+                                                          <input type="radio" name="lNamerad9" required value="F">M
+                                                          <input type="radio" name="lNamerad9" required value="F">N
+                                                          <input type="radio" name="lNamerad9" required value="F">O
+                                                          <input type="radio" name="lNamerad9" required value="F">P
+                                                          <input type="radio" name="lNamerad9" required value="F">Q
+                                                          <input type="radio" name="lNamerad9" required value="F">R
+                                                          <input type="radio" name="lNamerad9" required value="F">S
+                                                          <input type="radio" name="lNamerad9" required value="F">T
+                                                          <input type="radio" name="lNamerad9" required value="F">U
+                                                          <input type="radio" name="lNamerad9" required value="F">V
+                                                          <input type="radio" name="lNamerad9" required value="F">W
+                                                          <input type="radio" name="lNamerad9" required value="F">X
+                                                          <input type="radio" name="lNamerad9" required value="F">Y
+                                                          <input type="radio" name="lNamerad9" required value="F">Z
+                                                          <input type="radio" name="lNamerad9" required value="F">BLANK
+                                                          <input type="radio" name="lNamerad9" required value="F">-
+                                                        </div><br/> 
+                                                        <div id="lNamerad10">
+                                                            <Label>Character 10:</Label>
+                                                            <input type="radio" name="lNamerad10" required value="A">A
+                                                            <input type="radio" name="lNamerad10" required value="B">B
+                                                            <input type="radio" name="lNamerad10" required value="C">C
+                                                            <input type="radio" name="lNamerad10" required value="D">D
+                                                            <input type="radio" name="lNamerad10" required value="E">E
+                                                            <input type="radio" name="lNamerad10" required value="F">F
+                                                            <input type="radio" name="lNamerad10" required value="A">G
+                                                            <input type="radio" name="lNamerad10" required value="B">H
+                                                            <input type="radio" name="lNamerad10" required value="C">I
+                                                            <input type="radio" name="lNamerad10" required value="D">J
+                                                            <input type="radio" name="lNamerad10" required value="E">K
+                                                            <input type="radio" name="lNamerad10" required value="F">L
+                                                            <input type="radio" name="lNamerad10" required value="F">M
+                                                            <input type="radio" name="lNamerad10" required value="F">N
+                                                            <input type="radio" name="lNamerad10" required value="F">O
+                                                            <input type="radio" name="lNamerad10" required value="F">P
+                                                            <input type="radio" name="lNamerad10" required value="F">Q
+                                                            <input type="radio" name="lNamerad10" required value="F">R
+                                                            <input type="radio" name="lNamerad10" required value="F">S
+                                                            <input type="radio" name="lNamerad10" required value="F">T
+                                                            <input type="radio" name="lNamerad10" required value="F">U
+                                                            <input type="radio" name="lNamerad10" required value="F">V
+                                                            <input type="radio" name="lNamerad10" required value="F">W
+                                                            <input type="radio" name="lNamerad10" required value="F">X
+                                                            <input type="radio" name="lNamerad10" required value="F">Y
+                                                            <input type="radio" name="lNamerad10" required value="F">Z
+                                                            <input type="radio" name="lNamerad10" required value="F">BLANK
+                                                            <input type="radio" name="lNamerad10" required value="F">-
+                                                          </div><br/> 
+                                                          <div id="lNamerad11">
+                                                              <Label>Character 11:</Label>
+                                                              <input type="radio" name="lNamerad11" required value="A">A
+                                                              <input type="radio" name="lNamerad11" required value="B">B
+                                                              <input type="radio" name="lNamerad11" required value="C">C
+                                                              <input type="radio" name="lNamerad11" required value="D">D
+                                                              <input type="radio" name="lNamerad11" required value="E">E
+                                                              <input type="radio" name="lNamerad11" required value="F">F
+                                                              <input type="radio" name="lNamerad11" required value="A">G
+                                                              <input type="radio" name="lNamerad11" required value="B">H
+                                                              <input type="radio" name="lNamerad11" required value="C">I
+                                                              <input type="radio" name="lNamerad11" required value="D">J
+                                                              <input type="radio" name="lNamerad11" required value="E">K
+                                                              <input type="radio" name="lNamerad11" required value="F">L
+                                                              <input type="radio" name="lNamerad11" required value="F">M
+                                                              <input type="radio" name="lNamerad11" required value="F">N
+                                                              <input type="radio" name="lNamerad11" required value="F">O
+                                                              <input type="radio" name="lNamerad11" required value="F">P
+                                                              <input type="radio" name="lNamerad11" required value="F">Q
+                                                              <input type="radio" name="lNamerad11" required value="F">R
+                                                              <input type="radio" name="lNamerad11" required value="F">S
+                                                              <input type="radio" name="lNamerad11" required value="F">T
+                                                              <input type="radio" name="lNamerad11" required value="F">U
+                                                              <input type="radio" name="lNamerad11" required value="F">V
+                                                              <input type="radio" name="lNamerad11" required value="F">W
+                                                              <input type="radio" name="lNamerad11" required value="F">X
+                                                              <input type="radio" name="lNamerad11" required value="F">Y
+                                                              <input type="radio" name="lNamerad11" required value="F">Z
+                                                              <input type="radio" name="lNamerad11" required value="F">BLANK
+                                                              <input type="radio" name="lNamerad11" required value="F">-
+                                                            </div><br/> 
+                                                            <div id="lNamerad12">
+                                                                <Label>Character 12:</Label>
+                                                                <input type="radio" name="lNamerad12" required value="A">A
+                                                                <input type="radio" name="lNamerad12" required value="B">B
+                                                                <input type="radio" name="lNamerad12" required value="C">C
+                                                                <input type="radio" name="lNamerad12" required value="D">D
+                                                                <input type="radio" name="lNamerad12" required value="E">E
+                                                                <input type="radio" name="lNamerad12" required value="F">F
+                                                                <input type="radio" name="lNamerad12" required value="A">G
+                                                                <input type="radio" name="lNamerad12" required value="B">H
+                                                                <input type="radio" name="lNamerad12" required value="C">I
+                                                                <input type="radio" name="lNamerad12" required value="D">J
+                                                                <input type="radio" name="lNamerad12" required value="E">K
+                                                                <input type="radio" name="lNamerad12" required value="F">L
+                                                                <input type="radio" name="lNamerad12" required value="F">M
+                                                                <input type="radio" name="lNamerad12" required value="F">N
+                                                                <input type="radio" name="lNamerad12" required value="F">O
+                                                                <input type="radio" name="lNamerad12" required value="F">P
+                                                                <input type="radio" name="lNamerad12" required value="F">Q
+                                                                <input type="radio" name="lNamerad12" required value="F">R
+                                                                <input type="radio" name="lNamerad12" required value="F">S
+                                                                <input type="radio" name="lNamerad12" required value="F">T
+                                                                <input type="radio" name="lNamerad12" required value="F">U
+                                                                <input type="radio" name="lNamerad12" required value="F">V
+                                                                <input type="radio" name="lNamerad12" required value="F">W
+                                                                <input type="radio" name="lNamerad12" required value="F">X
+                                                                <input type="radio" name="lNamerad12" required value="F">Y
+                                                                <input type="radio" name="lNamerad12" required value="F">Z
+                                                                <input type="radio" name="lNamerad12" required value="F">BLANK
+                                                                <input type="radio" name="lNamerad12" required value="F">-
+                                                              </div><br/> 
+
+                                                              <input type="password" id="password" name="password"
+                                                              minlength="8" required
+                                                              placeholder="Password" />
+                                               
+                                                           <input type="password" id="password" name="password"
+                                                              minlength="8" required
+                                                              placeholder="Confirm Password" /> <br/>                         
+              <input type="submit" value="Register"> <br/>
+
+            </form>   
+        <hr/>
+    <form id="Login">
+        <h2>Log in:</h2>
+            <input id="email" type="email"placeholder="E-Mail Address" required><br/>
+            <input type="password" id="password" name="password"required placeholder="Password" />
+            <input type="submit" value="login"> <br/>
+    </form>
+
+    <hr/>
+    <form id="Reset Password">
+        <h2>Reset Password:</h2>
+            <input id="email" type="email"placeholder="E-Mail Address" required><br/>
+    </form>
+
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+</html>
